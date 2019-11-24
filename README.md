@@ -1,4 +1,4 @@
-# Welcome to the PHP MVC framework
+# Welcome to the PHP MVC framework (jQuery Ajax CRUD)
 
 This is a simple MVC framework for building web applications in PHP. It's free and [open-source](LICENSE).
 
