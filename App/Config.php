@@ -9,6 +9,12 @@ namespace App;
  */
 class Config
 {
+    /**
+     * Side host
+     * @var string
+     */
+
+    const HOST_URL = 'http://localhost/php-mvc-master/public';
 
     /**
      * Database host
