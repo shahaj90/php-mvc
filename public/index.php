@@ -28,7 +28,10 @@ $router = new Core\Router();
 // Add the routes
 // $router->add('', ['controller' => 'Home', 'action' => 'index']);
 // $router->add('{controller}/{action}');
-$router->add('Login', ['controller' => 'LoginController', 'action' => 'index']);
+   
 $router->add('Buyer', ['controller' => 'BuyerController', 'action' => 'index']);    
-$router->add('User', ['controller' => 'UserController', 'action' => 'index']);    
+$router->add('Login', ['controller' => 'LoginController', 'action' => 'index']);
+$router->add('User', ['controller' => 'UserController', 'action' => 'index']);
+$router->add('ReadUsers', ['controller' => 'UserController', 'action' => 'readUsers']);     
+$router->add('RegisterUser', ['controller' => 'UserController', 'action' => 'registerUser']);     
 $router->dispatch($_SERVER['QUERY_STRING']);

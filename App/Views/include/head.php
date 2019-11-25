@@ -9,8 +9,10 @@
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-     <!-- Datatables CSS-->
+    <!-- Datatables CSS-->
     <link rel="stylesheet" href="vendor/datatables/datatables.min.css">
+    <!-- Sweetalert2 CSS-->
+    <link rel="stylesheet" href="vendor/sweetalert2/dist/sweetalert2.min.css">
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <!-- Fontastic Custom icon font-->

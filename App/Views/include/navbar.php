@@ -64,3 +64,7 @@
           </div>
         </nav>
       </header>
+
+      <script type="text/javascript">
+        var baseUrl = "<?php echo Config::HOST_URL; ?>";
+      </script>
