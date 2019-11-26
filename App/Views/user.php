@@ -42,7 +42,6 @@
           </div>
         </div>
         <!-- Add modal -->
-        <!-- The Modal -->
         <div class="modal fade" id="addUserModal">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -55,10 +54,77 @@
 
               <!-- Modal body -->
               <form class="text-left" id="registerAddFrom" novalidate>
-                <div class="modal-body">  
+                <div class="modal-body"> 
+                  <div id="addMessageDiv">
+                    <div class="alert alert-danger" id="addMessage"></div>
+                  </div>                   
 
                   <div class="form-group">
                     <label>Name</label>
+                    <input type="text" placeholder="Write name" name="name" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email Address" name="email" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Write password" name="password" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Mobile</label>
+                    <input type="text" placeholder="Write Mobile Number" name="mobile" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Status</label>
+                    <select name="status" class="form-control">
+                      <option value="">Select Status</option>
+                      <option value="1">Active</option>
+                      <option value="2">InAction</option>
+                    </select>
+                  </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <div class="form-group">
+                    <button  type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-primary" value="Register" onclick="registerUser()">
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Update modal -->
+        <div class="modal fade" id="updateUserModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Update User</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <form class="text-left" id="updateAddFrom" novalidate>
+                <div class="modal-body"> 
+                  <div id="updateMessageDiv">
+                    <div class="alert alert-danger" id="updateMessage"></div>
+                  </div>                   
+
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input type="hidden" id="id" name="id" class="form-control">
                     <input type="text" placeholder="Write name" id="name" name="name" class="form-control">
                   </div>
 
@@ -79,7 +145,7 @@
 
                   <div class="form-group">
                     <label>Status</label>
-                    <select name="status" class="form-control">
+                    <select name="status" class="form-control" id="status">
                       <option value="">Select Status</option>
                       <option value="1">Active</option>
                       <option value="2">InAction</option>
@@ -92,7 +158,7 @@
                 <div class="modal-footer">
                   <div class="form-group">
                     <button  type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    <input type="submit" class="btn btn-primary" value="Register" onclick="registerUser()">
+                    <input type="submit" class="btn btn-primary" value="Update" onclick="updateUser()">
                   </div>
                 </div>
 
