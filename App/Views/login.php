@@ -38,7 +38,7 @@
                 <div class="logo text-uppercase">
                   <strong class="text-primary">Login</strong>
                 </div>
-                <p>Simple PHP form submission script with frontend validation</p>
+                <p>XpeedStudio Buyer Management Web APP</p>
                 <form class="text-left form-validate">
                   <div class="form-group-material">
                     <input id="login-username" type="email" name="email" required data-msg="Please enter your email" class="input-material">
