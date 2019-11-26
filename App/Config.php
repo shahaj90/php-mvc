@@ -14,7 +14,7 @@ class Config
      * @var string
      */
 
-    const HOST_URL = 'http://localhost/php-mvc-master/public';
+    const HOST_URL = 'http://localhost/php-mvc/public';
 
     /**
      * Database host
